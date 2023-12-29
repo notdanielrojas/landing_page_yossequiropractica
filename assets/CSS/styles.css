@@ -334,3 +334,28 @@
 .accordion-button {
   font-size: 1.8rem;
 }
+
+@media (min-width:375px) {
+  .footer-image {
+    width: 20%;
+  }
+}
+@media (min-width:760px) {
+  .footer-image {
+    width: 15%;
+
+  }
+}
+@media (min-width:1024px) {
+  .footer-image {
+    width: 10%;
+
+  }
+}
+.whatsapp-icon i {
+  transition: all 0.3s ease;
+}
+.whatsapp-icon i:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
