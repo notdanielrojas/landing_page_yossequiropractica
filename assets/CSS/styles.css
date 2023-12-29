@@ -164,7 +164,57 @@
   }
 }
 
-/* Evaluation section */
+/* Book-appointment section */
+.book-appointment-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.book-appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .book-appointment {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.book-appointment .book-appointment-image {
+  width: 85%;
+}
+
+@media (min-width: 480px) {
+  .book-appointment .book-appointment-image {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .book-appointment .book-appointment-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.book-appointment .book-appointment-description {
+  width: 85%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .book-appointment .book-appointment-description {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 6rem 0 2rem;
+    margin-top: 0rem;
+  }
+}
+
+/* Schedule section */
 .schedule-container {
   width: 100%;
   margin: 0 auto;
@@ -274,25 +324,13 @@
   border-top: 1px solid #000000;
 }
 
-/* * {
-  margin: 0;
-}
-
-body {
-  font-family: "Poppins", "Open Sans";
-  background-color: #F2F0E3;
-  color: #3F3738 ;
-}
 
 .accordion-button:not(.collapsed) {
-  color: #F2F0E3;
+  color: white;
   background-color: #3F3738;
+  
 }
 
-.texto-horarios p {
-  font-size: larger;
+.accordion-button {
+  font-size: 1.8rem;
 }
-
-#horarios tr{
-  font-size: larger;
-} */
