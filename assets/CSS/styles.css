@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", "Open Sans";
+  background-color: #F2F0E3;
+  color: #3F3738 ;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #F2F0E3;
+  background-color: #3F3738;
+}
+
+.texto-horarios p {
+  font-size: larger;
+}
+
+#horarios tr{
+  font-size: larger;
+}
