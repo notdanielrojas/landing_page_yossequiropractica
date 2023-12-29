@@ -1,4 +1,280 @@
-* {
+/* Header */
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .header-container {
+    width: 70%;
+  }
+}
+
+/* About me section */
+.about-me-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .about-me {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.about-me .about-me-image {
+  width: 85%;
+}
+@media (min-width: 480px) {
+  .about-me .about-me-image {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .about-me .about-me-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.about-me .about-me-description {
+  width: 85%;
+  margin-top: 1rem;
+}
+@media (min-width: 480px) {
+  .about-me .about-me-description {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 6rem 0 2rem;
+    margin-top: 0rem;
+  }
+}
+
+/* Benefits section */
+.benefits-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .benefits {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.benefits .benefits-image {
+  width: 85%;
+}
+@media (min-width: 480px) {
+  .benefits .benefits-image {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .benefits .benefits-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.benefits .benefits-description {
+  width: 85%;
+  margin-top: 1rem;
+}
+.benefits .benefits-description ol {
+  margin-top: 1rem;
+}
+@media (min-width: 480px) {
+  .benefits .benefits-description {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 6rem 0 2rem;
+    margin-top: 0rem;
+  }
+  .benefits .benefits-description ol {
+    margin-top: 0;
+  }
+}
+
+/* Evaluation section */
+.evaluation-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.evaluation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .evaluation {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.evaluation .evaluation-image {
+  width: 85%;
+}
+@media (min-width: 480px) {
+  .evaluation .evaluation-image {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .evaluation .evaluation-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.evaluation .evaluation-description {
+  width: 85%;
+  margin-top: 1rem;
+}
+.evaluation .evaluation-description ol {
+  margin-top: 1rem;
+}
+@media (min-width: 480px) {
+  .evaluation .evaluation-description {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 6rem 0 2rem;
+    margin-top: 0rem;
+  }
+  .evaluation .evaluation-description ol {
+    margin-top: 0;
+  }
+}
+
+/* Evaluation section */
+.schedule-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .schedule {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.schedule .schedule-image {
+  width: 85%;
+}
+@media (min-width: 480px) {
+  .schedule .schedule-image {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .schedule .schedule-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.schedule .schedule-description {
+  width: 85%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .schedule .schedule-description {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 6rem 0 2rem;
+    margin-top: 0rem;
+  }
+}
+
+.schedule-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 15rem auto;
+  background-color: #ffffff;
+}
+@media (min-width: 480px) {
+  .schedule-grid {
+    grid-template-columns: 15rem auto;
+    grid-template-rows: repeat(4, 5rem);
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 768px) {
+  .schedule-grid {
+    grid-template-columns: 15rem auto;
+    grid-template-rows: repeat(3, auto);
+    background-color: #ffffff;
+  }
+}
+
+.schedule-grid .schedule-day-week p {
+  font-size: 2rem;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  padding-left: 1rem;
+}
+@media (min-width: 480px) {
+  .schedule-grid .schedule-day-week p {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .schedule-grid .schedule-day-week p {
+    font-size: 2rem;
+  }
+}
+.schedule-grid .schedule-day-week p:nth-child(1) {
+  border-top: 1px solid #000000;
+}
+
+.schedule-grid .schedule-time p {
+  font-size: 2rem;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-left: 0.5rem;
+}
+@media (min-width: 480px) {
+  .schedule-grid .schedule-time p {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .schedule-grid .schedule-time p {
+    font-size: 2rem;
+  }
+}
+.schedule-grid .schedule-time p:nth-child(1) {
+  border-top: 1px solid #000000;
+}
+
+/* * {
   margin: 0;
 }
 
@@ -19,4 +295,4 @@ body {
 
 #horarios tr{
   font-size: larger;
-}
+} */
