@@ -320,11 +320,9 @@
   background: #ffffff;
   border-top: 1px solid #000000;
   border-left: 1px solid #000000;
-  color: blue;
 }
 @media (min-width: 768px) {
   .schedule-flex .schedule-information .schedule-information-week-day {
-    color: red;
   }
 }
 @media (min-width: 1024px) {
