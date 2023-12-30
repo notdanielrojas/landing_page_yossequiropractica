@@ -315,7 +315,7 @@
 }
 
 .schedule-flex .schedule-information .schedule-information-week-day {
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
   width: 10rem;
   background: #ffffff;
   border-top: 1px solid #000000;
@@ -329,7 +329,7 @@
   }
 }
 .schedule-flex .schedule-information .schedule-information-time {
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
   width: 14.5rem;
   background: #ffffff;
   border-top: 1px solid #000000;
@@ -368,7 +368,7 @@
 /* FAQ Section */
 .accordion-button:not(.collapsed) {
   color: white;
-  background-color: #3f3738;
+  background-color: #c2b69a;
 }
 
 .accordion-button {
