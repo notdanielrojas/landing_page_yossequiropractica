@@ -295,88 +295,84 @@
   }
 }
 
-.schedule-grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 15rem auto;
-  background-color: #ffffff;
+.schedule-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-@media (min-width: 480px) {
-  .schedule-grid {
-    grid-template-columns: 15rem auto;
-    grid-template-rows: repeat(4, 5rem);
-    background-color: #ffffff;
-      }
+.schedule-flex .schedule-information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
 @media (min-width: 768px) {
-  .schedule-grid {
-    grid-template-columns: 15rem auto;
-    grid-template-rows: repeat(3, auto);
-    background-color: #ffffff;
+  .schedule-flex .schedule-information {
+    justify-content: flex-start;
   }
 }
 
-.schedule-grid .schedule-day-week p {
-  font-size: 2rem;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+.schedule-flex .schedule-information .schedule-information-week-day {
+  padding-left: 0.3rem;
+  width: 10rem;
+  background: #ffffff;
+  border-top: 1px solid #000000;
   border-left: 1px solid #000000;
-  padding-left: 1rem;
- 
+  color: blue;
 }
-
-@media (min-width: 480px) {
-  .schedule-grid .schedule-day-week p {
-    font-size: 2.4rem;
-  }
-}
-
 @media (min-width: 768px) {
-  .schedule-grid .schedule-day-week p {
-    font-size: 2rem;
+  .schedule-flex .schedule-information .schedule-information-week-day {
+    color: red;
   }
 }
-
-.schedule-grid .schedule-day-week p:nth-child(1) {
-  border-top: 1px solid #000000;
+@media (min-width: 1024px) {
+  .schedule-flex .schedule-information .schedule-information-week-day {
+    width: 30%;
+    color: #000000;
+  }
 }
-
-.schedule-grid .schedule-time p {
-  font-size: 2rem;
+.schedule-flex .schedule-information .schedule-information-time {
+  padding-left: 0.3rem;
+  width: 14.5rem;
+  background: #ffffff;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+}
+@media (min-width: 1024px) {
+  .schedule-flex .schedule-information .schedule-information-time {
+    width: 50%;
+  }
+}
+.last-option {
   border-bottom: 1px solid #000000;
-  padding-left: 0.5rem;
 }
 
-@media (min-width: 375px) {
-  .schedule-grid .schedule-time p {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 480px) {
-  .schedule-grid .schedule-time p {
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .schedule-grid .schedule-time p {
-    font-size: 2rem;
-  }
-}
-
-.schedule-grid .schedule-time p:nth-child(1) {
+/* .schedule-information p:nth-child(1) {
+  padding-left: 0.3rem;
+  width: 10rem;
+  background: #ffffff;
   border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
 }
+.schedule-information p:nth-child(2) {
+  padding-left: 0.3rem;
+  width: 14.5rem;
+  background: #ffffff;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.schedule-flex .schedule-information .border-bottom {
+  border-bottom: 1px solid #000000;
+} */
 
 /* FAQ Section */
 .accordion-button:not(.collapsed) {
   color: white;
-  background-color: #3F3738;
-  
+  background-color: #3f3738;
 }
 
 .accordion-button {
@@ -397,16 +393,14 @@
 .footer-image {
   width: 10%;
 }
-@media (min-width:375px) {
+@media (min-width: 375px) {
   .footer-image {
     width: 20%;
   }
 }
 
-@media (min-width:760px) {
+@media (min-width: 760px) {
   .footer-image {
     width: 15%;
-
   }
 }
-
