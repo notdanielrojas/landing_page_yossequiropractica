@@ -321,10 +321,7 @@
   border-top: 1px solid #000000;
   border-left: 1px solid #000000;
 }
-@media (min-width: 768px) {
-  .schedule-flex .schedule-information .schedule-information-week-day {
-  }
-}
+
 @media (min-width: 1024px) {
   .schedule-flex .schedule-information .schedule-information-week-day {
     width: 30%;
