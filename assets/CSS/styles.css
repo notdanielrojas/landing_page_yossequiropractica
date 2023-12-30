@@ -372,7 +372,7 @@
   border-top: 1px solid #000000;
 }
 
-
+/* FAQ Section */
 .accordion-button:not(.collapsed) {
   color: white;
   background-color: #3F3738;
@@ -383,6 +383,20 @@
   font-size: 1.8rem;
 }
 
+/* Contact Section */
+.whatsapp-icon i {
+  transition: all 0.3s ease;
+}
+
+.whatsapp-icon i:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Footer Section */
+.footer-image {
+  width: 10%;
+}
 @media (min-width:375px) {
   .footer-image {
     width: 20%;
@@ -396,18 +410,3 @@
   }
 }
 
-@media (min-width:1024px) {
-  .footer-image {
-    width: 10%;
-
-  }
-}
-
-.whatsapp-icon i {
-  transition: all 0.3s ease;
-}
-
-.whatsapp-icon i:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease;
-}
