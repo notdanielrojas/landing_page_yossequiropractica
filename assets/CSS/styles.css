@@ -29,6 +29,17 @@
   margin-bottom: 1.5rem;
 }
 
+.about-me-subtitle1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-me-subtitle2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
 @media (min-width: 480px) {
   .about-me {
     align-items: flex-start;
@@ -349,7 +360,7 @@
 /* FAQ Section */
 .accordion-button:not(.collapsed) {
   color: white;
-  background-color: #c2b69a;
+  background-color: #8a816d;
 }
 
 .accordion-button {
@@ -370,6 +381,13 @@
 .footer-image {
   width: 10%;
 }
+
+@media (min-width: 320px) {
+  .footer-image {
+    width: 20%;
+  }
+}
+
 @media (min-width: 375px) {
   .footer-image {
     width: 20%;
